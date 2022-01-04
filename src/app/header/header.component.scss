@@ -1,0 +1,33 @@
+img {
+  width: 70px;
+  border-right: 1px solid #2326f0;
+  padding-right: 1em;
+}
+mat-toolbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #2600ff;
+  align-content: center;
+}
+
+.mat-display-6 {
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+.u-name{
+margin-left: auto;
+}
+
+p {
+  margin-bottom: 0;
+  color: white;
+  font-size: larger;
+  font-weight: 400;
+}
+
+.menu{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  size: 150px;
+  border-radius: 12px;
+}
+

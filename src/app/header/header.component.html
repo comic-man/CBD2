@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <img src="https://i.pinimg.com/474x/da/65/11/da65117fe75a6e39aa12db6456a744fa.jpg" alt="Comic Book">
+  <div class="mat-display-6">
+    <button mat-button [matMenuTriggerFor]="menu" class="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+  <button mat-menu-item>Login</button>
+  <button mat-menu-item>Signup</button>
+  <button mat-menu-item>Catalog</button>
+    </mat-menu>
+
+  </div>
+  <div class="u-name">
+    <p>UserName</p>
+  </div>
+
+</mat-toolbar>
