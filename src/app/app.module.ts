@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialsModule } from './materials/materials.module';
 import { HeaderComponent } from './header/header.component';
+import { ComicListComponent } from './comic-list/comic-list.component';
+import { ComicInfoComponent } from './comic-info/comic-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    ComicListComponent,
+    ComicInfoComponent
   ],
   imports: [
     BrowserModule,
