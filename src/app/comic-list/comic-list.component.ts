@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-comic-list',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comic-list.component.scss']
 })
 export class ComicListComponent implements OnInit {
+  panelOpenState:any="";
+    ngOnInit(): void {
 
-  constructor() { }
-
-  ngOnInit(): void {
+    }
   }
-
-}
+  export class ExpansionOverviewExample {
+    panelOpenState = false;
+  }

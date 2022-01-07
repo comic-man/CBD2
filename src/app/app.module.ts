@@ -20,7 +20,7 @@ import { ComicInfoComponent } from './comic-info/comic-info.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialsModule
+    MaterialsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
