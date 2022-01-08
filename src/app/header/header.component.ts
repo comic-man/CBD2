@@ -7,7 +7,7 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  emailFormControl = new FormControl('',);
+  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
 
   constructor() { }
 
@@ -18,4 +18,5 @@ export class HeaderComponent implements OnInit {
 export class InputErrorsExample {
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
 }
+export class MenuOverviewExample {}
 

@@ -8,19 +8,23 @@ import { MaterialsModule } from './materials/materials.module';
 import { HeaderComponent } from './header/header.component';
 import { ComicListComponent } from './comic-list/comic-list.component';
 import { ComicInfoComponent } from './comic-info/comic-info.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ComicListComponent,
-    ComicInfoComponent
+    ComicInfoComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
