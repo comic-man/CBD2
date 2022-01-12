@@ -1,3 +1,18 @@
 <mat-card>
-  <mat-card-title> Select a comic to see its info. </mat-card-title>
-</mat-card>
+  <!-- Don't forget to add back the placeholder text -->
+
+  <mat-card-title *ngIf="!this.isComicSelected" class="teambox">Select a team to view members.</mat-card-title>
+
+  <ng-container *ngIf="this.isComicSelected">
+  <mat-card-title>{{ activeComic.name }}</mat-card-title>
+
+  <mat-card-content>
+    <div class="member-card" *ngFor="let comic of active.comic">
+      <img src="{{ comic.pathToPhoto }}" alt="profile pic" />
+      <div class="member-text">
+        <p>{{ comic.firstName }} {{ comic.lastName }}</p>
+        <p>{{ comic.title }}</p>
+      </div>
+    </div>
+  </mat-card-content>
+</ng-container>
