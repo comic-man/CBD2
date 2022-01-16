@@ -1,9 +1,9 @@
 <mat-card>
   <!-- Don't forget to add back the placeholder text -->
 
-  <mat-card-title *ngIf="!this.isComicSelected" class="teambox">Select a team to view members.</mat-card-title>
+    <ng-container *ngIf="this.isComicSelected != null || undefined">
 
-  <ng-container *ngIf="this.isComicSelected">
+  <mat-card-title *ngIf="!this.isComicSelected" class="teambox">Select a team to view members.</mat-card-title>
   <mat-card-title>{{ activeComic.name }}</mat-card-title>
 
   <mat-card-content>

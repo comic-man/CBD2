@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { ComicListComponent } from './comic-list/comic-list.component';
 import { ComicInfoComponent } from './comic-info/comic-info.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ApiService } from './services/api.service';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MaterialsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
